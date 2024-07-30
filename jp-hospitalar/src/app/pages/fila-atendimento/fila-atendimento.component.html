@@ -1,0 +1,58 @@
+<div class="container-fila-espera">
+  <mat-card appearance="outlined">
+    <mat-card-content>
+      <div class="card-rows">
+        <div class="card-titulo">
+          <h2>
+            Fila de atendimento
+          </h2>
+          <p>
+            Urgência & Emegência > Atendimento
+          </p>
+        </div>
+        <div>
+          <form [formGroup]="formulario">
+            <div class="card-rows">
+              <mat-form-field appearance="outline" class="campo-input">
+                <input matInput formControlName="filtro">
+              </mat-form-field>
+            </div>
+          </form>
+        </div>
+        <div class="card-rows-actions">
+          <button mat-stroked-button (click)="abrirModalFiltros()">Filtros</button>
+          <button mat-stroked-button (click)="buscarFila()">Recarregar a fila</button>
+          <button mat-flat-button (click)="incluirNaFila()">Incluir na fila</button>
+        </div>
+      </div>
+    </mat-card-content>
+  </mat-card>
+  <mat-card appearance="outlined" class="card-listagem">
+    <mat-card-content>
+      <table mat-table [dataSource]="fonteDados">
+        @for (coluna of colunas; track coluna) {
+        <ng-container [matColumnDef]="coluna.def">
+          <th mat-header-cell *matHeaderCellDef>
+            {{coluna.cabecalho}}
+          </th>
+          <td mat-cell *matCellDef="let row">
+            {{coluna.conteudo(row)}}
+          </td>
+        </ng-container>
+        }
+        <ng-container matColumnDef="acoes">
+          <th mat-header-cell *matHeaderCellDef> Ações </th>
+          <td mat-cell *matCellDef="let element">
+            <button mat-flat-button>
+              <mat-icon>campaign </mat-icon>
+            </button>
+          </td>
+        </ng-container>
+        <tr mat-header-row *matHeaderRowDef="mostrarColunasDinamicas"></tr>
+        <tr mat-row *matRowDef="let row; columns: mostrarColunasDinamicas;"></tr>
+      </table>
+      <mat-paginator [length]="totalPacientesFila()" [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons aria-label="Selecione a página">
+      </mat-paginator>
+    </mat-card-content>
+  </mat-card>
+</div>

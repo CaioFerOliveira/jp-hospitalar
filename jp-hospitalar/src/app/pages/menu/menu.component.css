@@ -1,0 +1,17 @@
+.card-menu {
+  width: 90rem;
+  height: 20rem;
+  border-radius: 20%;
+}
+.button-menu {
+  width: 5rem;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,29 @@
+.container-fila-espera {
+  width: 90rem;
+  height: 100%;
+}
+.card-titulo {
+  display: flex;
+  flex-direction: column;
+}
+.card-rows {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 2rem;
+}
+.card-rows-actions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 3rem;
+  button {
+    margin-right: 0.5rem;
+  }
+}
+.campo-input {
+  width: 30rem;
+}
+.card-listagem {
+  margin-top: 2rem;
+}

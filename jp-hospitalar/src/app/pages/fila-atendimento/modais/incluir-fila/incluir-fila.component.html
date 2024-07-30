@@ -1,0 +1,88 @@
+<mat-card class="card-incluir-fila" appearance="outlined">
+  <mat-card-title class="TituloCentralizado">Incluir na fila</mat-card-title>
+  <mat-card-content>
+    <form [formGroup]="formulario">
+      <div class="tituloInput">CPF:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="cpf" mask="00.000.0000-00">
+          @if (this.formulario.get('cpf')?.invalid) {
+          <mat-error>{{"Informe um cpf válido"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <div class="tituloInput">CNS:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="cns">
+          @if (this.formulario.get('telefone')?.invalid) {
+          <mat-error>{{"Informe um cns válido"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <div class="tituloInput">Telefone:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="telefone" mask="(00) 0000.0000 || (00) 00000-0000">
+          @if (this.formulario.get('telefone')?.invalid) {
+          <mat-error>{{"Informe o telefone do paciente"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <div class="tituloInput">Nome:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="nome">
+          @if (this.formulario.get('nomeDaMae')?.invalid) {
+          <mat-error>{{"Informe o nome do paciente"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <div class="tituloInput">Nome da Mãe:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="nomeDaMae">
+          @if (this.formulario.get('nomeDaMae')?.invalid) {
+          <mat-error>{{"Informe o nome da mãe"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <div class="tituloInput">Endereço:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <input matInput formControlName="endereco">
+          @if (this.formulario.get('endereco')?.invalid) {
+          <mat-error>{{"Informe um endereço válido"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+      <div class="titulo-radio-button">Prioridade ?
+        <div class="radio-button">
+          <mat-radio-group class="radio-group-padrao" formControlName="prioridade">
+            @for (prioridade of prioridades; track prioridade) {
+            <mat-radio-button [value]="prioridade">{{prioridade}}</mat-radio-button>
+            }
+          </mat-radio-group>
+        </div>
+      </div>
+      <div class="tituloInput">Fila:</div>
+      <div>
+        <mat-form-field appearance="outline">
+          <mat-select formControlName="fila">
+            <mat-option>--</mat-option>
+            @for (fila of filas; track fila) {
+            <mat-option [value]="fila">{{fila.descricao}}</mat-option>
+            }
+          </mat-select>
+          @if (this.formulario.get('fila')?.invalid) {
+          <mat-error>{{"Selecione uma fila válida"}}</mat-error>
+          }
+        </mat-form-field>
+      </div>
+    </form>
+  </mat-card-content>
+  <mat-card-actions class="card_actions">
+    <button mat-stroked-button (click)="voltar()">Voltar</button>
+    <button mat-flat-button (click)="incluir()">Incluir</button>
+  </mat-card-actions>
+</mat-card>
