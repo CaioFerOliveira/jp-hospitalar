@@ -1,30 +1,37 @@
 <div class="container-fila-espera">
   <mat-card appearance="outlined">
     <mat-card-content>
-      <div class="card-rows">
-        <div class="card-titulo">
-          <h2>
-            Fila de atendimento
-          </h2>
-          <p>
-            Urgência & Emegência > Atendimento
-          </p>
+      <form [formGroup]="formulario">
+        <div class="card-rows">
+          <div class="card-titulo">
+            <h2>
+              Fila de atendimento
+            </h2>
+            <p>
+              Urgência & Emegência > Atendimento
+            </p>
+          </div>
+          <div>
+
+          </div>
+          <div class="card-rows-actions">
+            <button mat-stroked-button (click)="abrirModalFiltros()">Filtros</button>
+            <button mat-stroked-button (click)="buscarFila()">Recarregar a fila</button>
+            <button mat-flat-button (click)="incluirNaFila()">Incluir na fila</button>
+          </div>
         </div>
-        <div>
-          <form [formGroup]="formulario">
-            <div class="card-rows">
-              <mat-form-field appearance="outline" class="campo-input">
-                <input matInput formControlName="filtro">
-              </mat-form-field>
-            </div>
-          </form>
+        <div class="filtro-acoes-fila">
+          <mat-radio-group formControlName="classificacao" aria-label="Select an option">
+            <mat-radio-button *ngFor="let class of classificacoes" (click)="RadioButtonClick($event)"
+              value="{{class.id}}">{{class.descricao}}</mat-radio-button>
+          </mat-radio-group>
+          <div>
+            <button id=" 1" mat-stroked-button>Acolhimento</button>
+            <button id="2" mat-stroked-button>Clínica Médica</button>
+            <button id="3" mat-stroked-button>Enfermagem</button>
+          </div>
         </div>
-        <div class="card-rows-actions">
-          <button mat-stroked-button (click)="abrirModalFiltros()">Filtros</button>
-          <button mat-stroked-button (click)="buscarFila()">Recarregar a fila</button>
-          <button mat-flat-button (click)="incluirNaFila()">Incluir na fila</button>
-        </div>
-      </div>
+      </form>
     </mat-card-content>
   </mat-card>
   <mat-card appearance="outlined" class="card-listagem">

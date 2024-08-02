@@ -3,211 +3,255 @@
     {
       "classificacao": {
         "id": 1,
-        "descricao": "Não urgente"
+        "descricao": "Sem classificação"
       },
       "prioridade": true,
       "fila": {
         "id": 2,
-        "descricao": "ENFERMAGEM"
+        "descricao": "Clínica Médica"
       },
       "pessoa": {
         "nome": "teste",
         "dataNascimento": "20/06/1997"
       },
-      "entrada": "29/07/2024 12:10"
+      "entrada": "29/07/2024 12:10",
+      "id": "c390"
     },
     {
       "classificacao": {
         "id": 2,
-        "descricao": "Pouco urgente"
+        "descricao": "Não urgente"
       },
       "prioridade": true,
       "fila": {
         "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
+        "descricao": "Acolhimento"
       },
       "pessoa": {
         "nome": "testeDois",
         "dataNascimento": "20/06/1996"
       },
-      "entrada": "28/07/2024 12:00"
+      "entrada": "28/07/2024 12:00",
+      "id": "acb7"
     },
     {
       "classificacao": {
-        "id": 2,
+        "id": 3,
         "descricao": "Pouco urgente"
       },
       "prioridade": true,
       "fila": {
         "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
+        "descricao": "Acolhimento"
       },
       "pessoa": {
         "nome": "testeDois",
         "dataNascimento": "20/06/1996"
       },
-      "entrada": "28/07/2024 12:00"
+      "entrada": "28/07/2024 12:00",
+      "id": "053f"
     },
     {
       "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
+        "id": 4,
+        "descricao": "Urgente"
       },
       "prioridade": true,
       "fila": {
         "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
+        "descricao": "Acolhimento"
       },
       "pessoa": {
         "nome": "testeDois",
         "dataNascimento": "20/06/1996"
       },
-      "entrada": "28/07/2024 12:00"
+      "entrada": "28/07/2024 12:00",
+      "id": "0459"
     },
     {
       "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
+        "id": 5,
+        "descricao": "Muito urgente"
       },
       "prioridade": true,
       "fila": {
         "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
+        "descricao": "Acolhimento"
       },
       "pessoa": {
         "nome": "testeDois",
         "dataNascimento": "20/06/1996"
       },
-      "entrada": "28/07/2024 12:00"
+      "entrada": "28/07/2024 12:00",
+      "id": "f262"
     },
     {
       "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
+        "id": 6,
+        "descricao": "Emergência"
       },
       "prioridade": true,
       "fila": {
         "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
+        "descricao": "Acolhimento"
       },
       "pessoa": {
         "nome": "testeDois",
         "dataNascimento": "20/06/1996"
       },
-      "entrada": "28/07/2024 12:00"
+      "entrada": "28/07/2024 12:00",
+      "id": "a9ab"
     },
     {
-      "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
-      },
-      "prioridade": true,
-      "fila": {
-        "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
-      },
-      "pessoa": {
-        "nome": "testeDois",
-        "dataNascimento": "20/06/1996"
-      },
-      "entrada": "28/07/2024 12:00"
-    },
-    {
-      "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
-      },
-      "prioridade": true,
-      "fila": {
-        "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
-      },
-      "pessoa": {
-        "nome": "testeDois",
-        "dataNascimento": "20/06/1996"
-      },
-      "entrada": "28/07/2024 12:00"
-    },
-    {
-      "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
-      },
-      "prioridade": true,
-      "fila": {
-        "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
-      },
-      "pessoa": {
-        "nome": "testeDois",
-        "dataNascimento": "20/06/1996"
-      },
-      "entrada": "28/07/2024 12:00"
-    },
-    {
-      "classificacao": {
-        "id": 2,
-        "descricao": "Pouco urgente"
-      },
-      "prioridade": true,
-      "fila": {
-        "id": 1,
-        "descricao": "CLÍNICA_MEDICA"
-      },
-      "pessoa": {
-        "nome": "testeDois",
-        "dataNascimento": "20/06/1996"
-      },
-      "entrada": "28/07/2024 12:00"
-    },
-    {
-      "id": "7282",
       "classificacao": {
         "id": 1,
         "descricao": "Sem classificação"
       },
-      "entrada": "2024-07-30T03:40:59.968Z",
+      "prioridade": true,
+      "fila": {
+        "id": 2,
+        "descricao": "Clínica Médica"
+      },
       "pessoa": {
-        "nome": "123123123123",
-        "dataNascimento": "2024-07-30T03:41:02.175Z"
+        "nome": "teste",
+        "dataNascimento": "20/06/1997"
+      },
+      "entrada": "29/07/2024 12:10",
+      "id": "c390"
+    },
+    {
+      "classificacao": {
+        "id": 2,
+        "descricao": "Não urgente"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "acb7"
+    },
+    {
+      "classificacao": {
+        "id": 3,
+        "descricao": "Pouco urgente"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "053f"
+    },
+    {
+      "classificacao": {
+        "id": 4,
+        "descricao": "Urgente"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "0459"
+    },
+    {
+      "classificacao": {
+        "id": 5,
+        "descricao": "Muito urgente"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "f262"
+    },
+    {
+      "classificacao": {
+        "id": 6,
+        "descricao": "Emergência"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "a9ab"
+    },
+    {
+      "classificacao": {
+        "id": 5,
+        "descricao": "Muito urgente"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "f262"
+    },
+    {
+      "classificacao": {
+        "id": 6,
+        "descricao": "Emergência"
+      },
+      "prioridade": true,
+      "fila": {
+        "id": 1,
+        "descricao": "Acolhimento"
+      },
+      "pessoa": {
+        "nome": "testeDois",
+        "dataNascimento": "20/06/1996"
+      },
+      "entrada": "28/07/2024 12:00",
+      "id": "a9ab"
+    },
+    {
+      "id": "6e2a",
+      "classificacao": {
+        "id": 1,
+        "descricao": "Sem classificação"
+      },
+      "entrada": "2024-08-02T02:48:10.446Z",
+      "pessoa": {
+        "nome": "111111111111111111111",
+        "dataNascimento": "2024-08-02T02:48:10.446Z"
       },
       "fila": {
         "id": 1,
         "descricao": "ACOLHIMENTO"
-      },
-      "prioridade": true
-    },
-    {
-      "id": "98e6",
-      "classificacao": {
-        "id": 1,
-        "descricao": "Sem classificação"
-      },
-      "entrada": "2024-07-30T03:43:22.480Z",
-      "pessoa": {
-        "nome": "31231313123",
-        "dataNascimento": "2024-07-30T03:43:22.480Z"
-      },
-      "fila": {
-        "id": 2,
-        "descricao": "CLÍNICA_MEDICA"
-      },
-      "prioridade": true
-    },
-    {
-      "id": "ff1b",
-      "classificacao": {
-        "id": 1,
-        "descricao": "Sem classificação"
-      },
-      "entrada": "2024-07-30T03:43:57.564Z",
-      "pessoa": {
-        "nome": "3131313131",
-        "dataNascimento": "2024-07-30T03:43:57.564Z"
-      },
-      "fila": {
-        "id": 2,
-        "descricao": "CLÍNICA_MEDICA"
       },
       "prioridade": true
     }
